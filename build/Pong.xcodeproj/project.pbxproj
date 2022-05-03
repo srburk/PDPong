@@ -1,0 +1,528 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		13E18B79661C4277A3166480 /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = D50F49EEB329411799FDFC22 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				C73303C2271D6EE0B45E73EE /* Generate CMakeFiles/ZERO_CHECK */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+		A3966349B6304FF28A2C3BEA /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 315D6A1202A446E8BF9ADB1D /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				0ABF16048E8F216D2659D3E7 /* Generate CMakeFiles/ALL_BUILD */,
+			);
+			dependencies = (
+				B11A963BE1F846D3B63C13D6 /* PBXTargetDependency */,
+				3A7A784FADB04DA5838FD75F /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		3BB9BA842821C78600664B2C /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = DE617BCA30874D94906EFE28 /* main.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		416CE5DA534940F58D27E07C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B1E63919897D4BBFB263D04B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13E18B79661C4277A3166480;
+			remoteInfo = ZERO_CHECK;
+		};
+		DF6625B625DF4C5BBF1F8723 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B1E63919897D4BBFB263D04B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4188DAB5BE8F463BAAB6DCA3;
+			remoteInfo = Pong;
+		};
+		E9C88DFD89E14E1D84721843 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B1E63919897D4BBFB263D04B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13E18B79661C4277A3166480;
+			remoteInfo = ZERO_CHECK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BCBCDC3249894803A93944CA /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		CB85E38FDC9549248B22E43B /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		DE617BCA30874D94906EFE28 /* main.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = main.c; path = src/main.c; sourceTree = SOURCE_ROOT; };
+		E94EBFEC3BCE4E09901A8C79 /* libPong.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; path = libPong.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		42831DBC601B4C21814AE044 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04D87F9D9CA84272A0CC8DBA = {
+			isa = PBXGroup;
+			children = (
+				4D3195F7F60B4050A977FFCA /* Pong */,
+				B681662E2AF34A32B408890E /* ALL_BUILD */,
+				6D7D6DF8B7EC4013B8629C9F /* Products */,
+				3845676DF45C4B6F80B3CBFD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3845676DF45C4B6F80B3CBFD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4D3195F7F60B4050A977FFCA /* Pong */ = {
+			isa = PBXGroup;
+			children = (
+				91CDB4FCD5CD42A5B7A2F07D /* Source Files */,
+				BCBCDC3249894803A93944CA /* CMakeLists.txt */,
+			);
+			name = Pong;
+			sourceTree = "<group>";
+		};
+		6D7D6DF8B7EC4013B8629C9F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E94EBFEC3BCE4E09901A8C79 /* libPong.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		91CDB4FCD5CD42A5B7A2F07D /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				DE617BCA30874D94906EFE28 /* main.c */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		B681662E2AF34A32B408890E /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				B6C1A62A797940518F9097B9 /* CMake Rules */,
+				CB85E38FDC9549248B22E43B /* CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		B6C1A62A797940518F9097B9 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4188DAB5BE8F463BAAB6DCA3 /* Pong */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 48FEFC46DE65493CAA147037 /* Build configuration list for PBXNativeTarget "Pong" */;
+			buildPhases = (
+				CF8C29E13D764EFC93200E40 /* Sources */,
+				42831DBC601B4C21814AE044 /* Frameworks */,
+				AE2EE7B0B0B16B1A2CD1639F /* CMake PostBuild Rules */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B52DBB8BE1014897907DCF2F /* PBXTargetDependency */,
+			);
+			name = Pong;
+			productName = Pong;
+			productReference = E94EBFEC3BCE4E09901A8C79 /* libPong.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B1E63919897D4BBFB263D04B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1330;
+			};
+			buildConfigurationList = DAFEE368D2F44824AB497C7B /* Build configuration list for PBXProject "Pong" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 04D87F9D9CA84272A0CC8DBA;
+			projectDirPath = ../;
+			projectRoot = "";
+			targets = (
+				A3966349B6304FF28A2C3BEA /* ALL_BUILD */,
+				4188DAB5BE8F463BAAB6DCA3 /* Pong */,
+				13E18B79661C4277A3166480 /* ZERO_CHECK */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0ABF16048E8F216D2659D3E7 /* Generate CMakeFiles/ALL_BUILD */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ALL_BUILD";
+			outputPaths = (
+				"/Users/srburk/Developer/Playdate Projects/Pong/build/CMakeFiles/ALL_BUILD",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nif test \"$CONFIGURATION\" = \"Debug\"; then :\n  cd \"/Users/srburk/Developer/Playdate Projects/Pong/build\"\n  echo Build\\ all\\ projects\nfi\nif test \"$CONFIGURATION\" = \"Release\"; then :\n  cd \"/Users/srburk/Developer/Playdate Projects/Pong/build\"\n  echo Build\\ all\\ projects\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AE2EE7B0B0B16B1A2CD1639F /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nif test \"$CONFIGURATION\" = \"Debug\"; then :\n  cd \"/Users/srburk/Developer/Playdate Projects/Pong/build\"\n  /opt/homebrew/Cellar/cmake/3.23.1/bin/cmake -E copy /Users/srburk/Developer/Playdate\\ Projects/Pong/build/Debug/libPong.dylib /Users/srburk/Developer/Playdate\\ Projects/Pong/Source/pdex.dylib\n  cd \"/Users/srburk/Developer/Playdate Projects/Pong/build\"\n  /opt/homebrew/Cellar/cmake/3.23.1/bin/cmake -E touch /Users/srburk/Developer/Playdate\\ Projects/Pong/Source/pdex.bin\n  cd \"/Users/srburk/Developer/Playdate Projects/Pong/build\"\n  /Users/srburk/Developer/PlaydateSDK/bin/pdc -sdkpath /Users/srburk/Developer/PlaydateSDK /Users/srburk/Developer/Playdate\\ Projects/Pong/Source /Users/srburk/Developer/Playdate\\ Projects/Pong/Pong.pdx\n  cd \"/Users/srburk/Developer/Playdate Projects/Pong/build\"\n  /opt/homebrew/Cellar/cmake/3.23.1/bin/cmake -E cmake_symlink_library /Users/srburk/Developer/Playdate\\ Projects/Pong/build/Debug/libPong.dylib /Users/srburk/Developer/Playdate\\ Projects/Pong/build/Debug/libPong.dylib /Users/srburk/Developer/Playdate\\ Projects/Pong/build/Debug/libPong.dylib\nfi\nif test \"$CONFIGURATION\" = \"Release\"; then :\n  cd \"/Users/srburk/Developer/Playdate Projects/Pong/build\"\n  /opt/homebrew/Cellar/cmake/3.23.1/bin/cmake -E copy /Users/srburk/Developer/Playdate\\ Projects/Pong/build/Release/libPong.dylib /Users/srburk/Developer/Playdate\\ Projects/Pong/Source/pdex.dylib\n  cd \"/Users/srburk/Developer/Playdate Projects/Pong/build\"\n  /opt/homebrew/Cellar/cmake/3.23.1/bin/cmake -E touch /Users/srburk/Developer/Playdate\\ Projects/Pong/Source/pdex.bin\n  cd \"/Users/srburk/Developer/Playdate Projects/Pong/build\"\n  /Users/srburk/Developer/PlaydateSDK/bin/pdc -sdkpath /Users/srburk/Developer/PlaydateSDK /Users/srburk/Developer/Playdate\\ Projects/Pong/Source /Users/srburk/Developer/Playdate\\ Projects/Pong/Pong.pdx\n  cd \"/Users/srburk/Developer/Playdate Projects/Pong/build\"\n  /opt/homebrew/Cellar/cmake/3.23.1/bin/cmake -E cmake_symlink_library /Users/srburk/Developer/Playdate\\ Projects/Pong/build/Release/libPong.dylib /Users/srburk/Developer/Playdate\\ Projects/Pong/build/Release/libPong.dylib /Users/srburk/Developer/Playdate\\ Projects/Pong/build/Release/libPong.dylib\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C73303C2271D6EE0B45E73EE /* Generate CMakeFiles/ZERO_CHECK */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ZERO_CHECK";
+			outputPaths = (
+				"/Users/srburk/Developer/Playdate Projects/Pong/build/CMakeFiles/ZERO_CHECK",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nif test \"$CONFIGURATION\" = \"Debug\"; then :\n  cd \"/Users/srburk/Developer/Playdate Projects/Pong/build\"\n  make -f /Users/srburk/Developer/Playdate\\ Projects/Pong/build/CMakeScripts/ReRunCMake.make\nfi\nif test \"$CONFIGURATION\" = \"Release\"; then :\n  cd \"/Users/srburk/Developer/Playdate Projects/Pong/build\"\n  make -f /Users/srburk/Developer/Playdate\\ Projects/Pong/build/CMakeScripts/ReRunCMake.make\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CF8C29E13D764EFC93200E40 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BB9BA842821C78600664B2C /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3A7A784FADB04DA5838FD75F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13E18B79661C4277A3166480 /* ZERO_CHECK */;
+			targetProxy = E9C88DFD89E14E1D84721843 /* PBXContainerItemProxy */;
+		};
+		B11A963BE1F846D3B63C13D6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4188DAB5BE8F463BAAB6DCA3 /* Pong */;
+			targetProxy = DF6625B625DF4C5BBF1F8723 /* PBXContainerItemProxy */;
+		};
+		B52DBB8BE1014897907DCF2F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13E18B79661C4277A3166480 /* ZERO_CHECK */;
+			targetProxy = 416CE5DA534940F58D27E07C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1A617BBFE6EC4758BA3F78FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/srburk/Developer/Playdate Projects/Pong/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Debug;
+		};
+		2F04818A28824121B1234D2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/srburk/Developer/Playdate Projects/Pong/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Release;
+		};
+		2F96A9240A7547C39D72848A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					Pong_EXPORTS,
+					"'TARGET_SIMULATOR=1'",
+					"'TARGET_EXTENSION=1'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/srburk/Developer/PlaydateSDK/C_API,
+					"$(inherited)",
+				);
+				INSTALL_PATH = "@rpath";
+				LIBRARY_STYLE = DYNAMIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+					"-fPIC",
+					"-Wall",
+					"-Wstrict-prototypes",
+					"-Wno-unknown-pragmas",
+					"'-std=gnu11'",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = (
+					"-dynamiclib",
+					"-Wl,-headerpad_max_install_names",
+					"$(inherited)",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Pong;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/srburk/Developer/Playdate Projects/Pong/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Release;
+		};
+		3A07298E2BB14F6FAA7ABEF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/srburk/Developer/Playdate Projects/Pong/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Debug;
+		};
+		751C7822A67B43A6B9632D46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk;
+				SYMROOT = "/Users/srburk/Developer/Playdate Projects/Pong/build/build";
+			};
+			name = Release;
+		};
+		A99B1250D3584866A3C914C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					Pong_EXPORTS,
+					"'TARGET_SIMULATOR=1'",
+					"'TARGET_EXTENSION=1'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					/Users/srburk/Developer/PlaydateSDK/C_API,
+					"$(inherited)",
+				);
+				INSTALL_PATH = "@rpath";
+				LIBRARY_STYLE = DYNAMIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"-fPIC",
+					"-Wall",
+					"-Wstrict-prototypes",
+					"-Wno-unknown-pragmas",
+					"'-std=gnu11'",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = (
+					"-dynamiclib",
+					"-Wl,-headerpad_max_install_names",
+					"$(inherited)",
+				);
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Pong;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/srburk/Developer/Playdate Projects/Pong/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Debug;
+		};
+		B501A0392FBD4C0382C40781 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = " $(inherited)";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/srburk/Developer/Playdate Projects/Pong/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = "$(inherited)";
+			};
+			name = Release;
+		};
+		EDDDFA26BA104A5D9CBF6D41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk;
+				SYMROOT = "/Users/srburk/Developer/Playdate Projects/Pong/build/build";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		315D6A1202A446E8BF9ADB1D /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A07298E2BB14F6FAA7ABEF2 /* Debug */,
+				2F04818A28824121B1234D2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		48FEFC46DE65493CAA147037 /* Build configuration list for PBXNativeTarget "Pong" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A99B1250D3584866A3C914C3 /* Debug */,
+				2F96A9240A7547C39D72848A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D50F49EEB329411799FDFC22 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A617BBFE6EC4758BA3F78FE /* Debug */,
+				B501A0392FBD4C0382C40781 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		DAFEE368D2F44824AB497C7B /* Build configuration list for PBXProject "Pong" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDDDFA26BA104A5D9CBF6D41 /* Debug */,
+				751C7822A67B43A6B9632D46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B1E63919897D4BBFB263D04B /* Project object */;
+}

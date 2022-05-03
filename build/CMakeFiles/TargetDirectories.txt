@@ -1,0 +1,3 @@
+/Users/srburk/Developer/Playdate Projects/Pong/build/CMakeFiles/Pong.dir
+/Users/srburk/Developer/Playdate Projects/Pong/build/CMakeFiles/ALL_BUILD.dir
+/Users/srburk/Developer/Playdate Projects/Pong/build/CMakeFiles/ZERO_CHECK.dir
