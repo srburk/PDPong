@@ -1,0 +1,8 @@
+
+.DS_STORE
+
+# Compiled Project Files
+*.pdx
+*.dylib
+*.o
+*.d
