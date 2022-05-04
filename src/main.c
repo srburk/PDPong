@@ -18,8 +18,10 @@
 __declspec(dllexport)
 #endif
 
-const char* fontpath = "/System/Fonts/Asheville-Sans-24-Light.pft";
-LCDFont* font = NULL;
+#define DISPLAY_SCALE 2
+
+const char* boldFontPath = "/System/Fonts/Roobert-10-Bold.pft";
+LCDFont* boldFont = NULL;
 
 int eventHandler(PlaydateAPI* pd, PDSystemEvent event, uint32_t arg)
 {
@@ -29,14 +31,16 @@ int eventHandler(PlaydateAPI* pd, PDSystemEvent event, uint32_t arg)
     {
         
         const char* err;
-        font = pd->graphics->loadFont(fontpath, &err);
-
-        if ( font == NULL )
-            pd->system->error("%s:%i Couldn't load font %s: %s", __FILE__, __LINE__, fontpath, err);
+        
+        boldFont = pd->graphics->loadFont(boldFontPath, &err);
+        if ( boldFont == NULL )
+            pd->system->error("%s:%i Couldn't load font %s: %s", __FILE__, __LINE__, boldFontPath, err);
         
         setPDPtr(pd);
         pd->display->setRefreshRate(40);
+        pd->display->setScale(DISPLAY_SCALE);
         pd->system->setUpdateCallback(update, NULL);
+        pd->graphics->setFont(boldFont);
         initGame();
 
     }
