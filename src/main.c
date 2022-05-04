@@ -12,11 +12,11 @@
 
 #include "pd_api.h"
 
+#include "game.h"
+
 #ifdef _WINDLL
 __declspec(dllexport)
 #endif
-
-static int update(void* userdata);
 
 int eventHandler(PlaydateAPI* pd, PDSystemEvent event, uint32_t arg)
 {
@@ -25,25 +25,12 @@ int eventHandler(PlaydateAPI* pd, PDSystemEvent event, uint32_t arg)
     if ( event == kEventInit )
     {
         
-        pd->display->setRefreshRate(20);
+        setPDPtr(pd);
+        pd->display->setRefreshRate(30);
         pd->system->setUpdateCallback(update, NULL);
+        initGame();
 
     }
     
     return 0;
 }
-
-static int update(void* userdata)
-{
-    return 1;
-}
-
-#define PADDLE_WIDTH 10
-#define PADDLE_HEIGHT 60
-
-struct Paddle {
-    // Position
-    int x;
-    int y;
-};
-
