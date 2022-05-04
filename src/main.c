@@ -26,7 +26,7 @@ int eventHandler(PlaydateAPI* pd, PDSystemEvent event, uint32_t arg)
     {
         
         setPDPtr(pd);
-        pd->display->setRefreshRate(30);
+        pd->display->setRefreshRate(40);
         pd->system->setUpdateCallback(update, NULL);
         initGame();
 

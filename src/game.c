@@ -27,8 +27,20 @@ typedef struct {
 } Paddle;
 
 Paddle player;
-Paddle* player_ptr;
 Paddle opponent;
+
+const int BALL_SPEED = 3;
+const int BALL_DIAMETER = 9;
+
+typedef struct {
+    // Position
+    int x;
+    int y;
+    int dx;
+    int dy;
+} Ball;
+
+Ball ball;
 
 void setPDPtr(PlaydateAPI* p) {
     pd = p;
@@ -36,17 +48,23 @@ void setPDPtr(PlaydateAPI* p) {
 
 void initGame() {
     player.x = FRAME_X;
-    player.y = 30;
-    player_ptr = &player;
-    
+    player.y = 100;
+
     opponent.x = 400 - (PADDLE_WIDTH + FRAME_X);
     opponent.y = 100;
     
+    ball.x = 200;
+    ball.y = 120;
+    ball.dx = BALL_SPEED;
+    ball.dy = BALL_SPEED;
+
     pd->system->logToConsole("Initialized Game");
     
 }
 
 void updatePaddle(Paddle *paddle) {
+    
+    pd->graphics->fillRect(paddle->x, paddle->y, PADDLE_WIDTH, PADDLE_HEIGHT, kColorWhite);
     
     PDButtons current;
     pd->system->getButtonState(&current, NULL, NULL);
@@ -62,18 +80,37 @@ void updatePaddle(Paddle *paddle) {
     
 }
 
+void updateBall(Ball *ball) {
+    
+    pd->graphics->fillEllipse(ball->x, ball->y, BALL_DIAMETER, BALL_DIAMETER, 0, 360, kColorWhite);
+    
+    if ( (ball->y <= 0) || ( (ball->y + BALL_DIAMETER) >= 240) ) {
+        ball->dy = -ball->dy;
+    }
+    
+    if ( (ball->x <= 0) || ( (ball->x + BALL_DIAMETER) >= 400) ) {
+        ball->dx = -ball->dx;
+    }
+    
+    ball->x += ball->dx;
+    ball->y += ball->dy;
+    
+}
+
 int update(void* userdata) {
     
-    pd->graphics->fillRect(FRAME_X, FRAME_Y, FRAME_WIDTH, FRAME_HEIGHT, kColorWhite);
+//    pd->graphics->fillRect(FRAME_X, FRAME_Y, FRAME_WIDTH, FRAME_HEIGHT, kColorWhite);
         
-    updatePaddle(player_ptr);
+    updatePaddle(&player);
+    updateBall(&ball);
     
     pd->graphics->fillRect(player.x, player.y, PADDLE_WIDTH, PADDLE_HEIGHT, kColorBlack);
     
     pd->graphics->fillRect(opponent.x, opponent.y, PADDLE_WIDTH, PADDLE_HEIGHT, kColorBlack);
     
-    // DEVELOP
-    pd->system->drawFPS(0, 0);
+    pd->graphics->fillEllipse(ball.x, ball.y, BALL_DIAMETER, BALL_DIAMETER, 0, 360, kColorBlack);
+    
+    pd->system->drawFPS(0,0);
 
     return 1;
 }
