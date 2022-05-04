@@ -88,7 +88,17 @@ void updateBall(Ball *ball) {
         ball->dy = -ball->dy;
     }
     
-    if ( (ball->x <= 0) || ( (ball->x + BALL_DIAMETER) >= 400) ) {
+    if ( (ball->x <= (FRAME_X + PADDLE_WIDTH)) ) {
+        
+        if (ball->y >= (player.y) && ball->y <= (player.y + PADDLE_HEIGHT)) {
+            ball->dx = -ball->dx;
+        } else {
+            pd->system->logToConsole("Opponent Wins!");
+            ball->x = 200;
+            ball->y = 120;
+        }
+
+    } else if ( (ball->x + BALL_DIAMETER / 2) >= FRAME_X + FRAME_WIDTH) {
         ball->dx = -ball->dx;
     }
     
@@ -98,11 +108,9 @@ void updateBall(Ball *ball) {
 }
 
 int update(void* userdata) {
-    
-//    pd->graphics->fillRect(FRAME_X, FRAME_Y, FRAME_WIDTH, FRAME_HEIGHT, kColorWhite);
-        
-    updatePaddle(&player);
+            
     updateBall(&ball);
+    updatePaddle(&player);
     
     pd->graphics->fillRect(player.x, player.y, PADDLE_WIDTH, PADDLE_HEIGHT, kColorBlack);
     
