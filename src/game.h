@@ -16,4 +16,6 @@ void setPDPtr(PlaydateAPI* p);
 
 void initGame(void);
 
+void checkScores(void);
+
 #endif /* game_h */
