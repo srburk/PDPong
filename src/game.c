@@ -152,19 +152,19 @@ static void drawScores() {
         
     char *string = NULL;
     pd->system->formatString(&string, "%i", player.score);
-    pd->graphics->drawText(string, 2, kUTF8Encoding, 92, 10);
+    pd->graphics->drawText(string, 1, kUTF8Encoding, 90, 10);
     
-    pd->graphics->fillRect(103, 13, 1, 7, kColorBlack);
+    pd->graphics->fillRect(100, 13, 2, 7, kColorBlack);
     
     pd->system->formatString(&string, "%i", opponent.score);
-    pd->graphics->drawText(string, 2, kUTF8Encoding, 108, 10);
+    pd->graphics->drawText(string, 1, kUTF8Encoding, 105, 10);
     
 }
 
 void checkScores( void ) {
     
     pd->graphics->clear(kColorWhite);
-            
+                
     if (player.score >= 10) {
         
         pd->graphics->drawText("You Win!", 8, kUTF8Encoding, 70, 50);
@@ -188,11 +188,11 @@ int update(void* userdata) {
     checkButtons(&player);
     
     if (gameState == active || gameState == starting) {
-        
-        pd->graphics->clear(kColorWhite);
-        
+                
         if (gameState == starting) {
             
+            pd->graphics->clear(kColorWhite);
+
             player.x = FRAME_X;
             player.y = 50;
             
@@ -235,7 +235,7 @@ int update(void* userdata) {
         
     } else {
         checkScores();
-        pd->graphics->drawText("Press Ⓐ to continue", 21, kUTF8Encoding, 45, 100);
+        pd->graphics->drawText("Press Ⓐ to continue", 21, kUTF8Encoding, 35, 100);
         
         PDButtons current;
         pd->system->getButtonState(&current, NULL, NULL);
